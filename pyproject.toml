@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sumfsa"
-version = "0.1.0a1"
+version = "0.1.0a3"
 description = "Logical filesystem, mounts, volumes and locations for the SUM ecosystem."
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "GPL-2.0-or-later" }
 authors = [{ name = "William Martinez Bas", email = "metfar@gmail.com" }]
-dependencies = []
+dependencies = ["sumui>=0.1.0a31", ]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Programming Language :: Python :: 3",

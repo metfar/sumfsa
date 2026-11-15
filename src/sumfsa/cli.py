@@ -21,6 +21,7 @@
 #  
 import argparse;
 
+from sumui.cli import SumArgumentParser;
 from . import __version__;
 from .filesystem import FileSystem;
 
@@ -35,7 +36,7 @@ def _size(value):
 
 
 def main(argv=None):
-    parser=argparse.ArgumentParser(prog="sumfsa",description="SUM filesystem abstraction inspector.");
+    parser=SumArgumentParser(prog="sumfsa",description="SUM filesystem abstraction inspector.");
     parser.add_argument("--version",action="version",version="sumfsa {}".format(__version__));
     sub=parser.add_subparsers(dest="command");
     path=sub.add_parser("path"); path.add_argument("value");

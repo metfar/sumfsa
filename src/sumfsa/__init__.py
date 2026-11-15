@@ -25,5 +25,5 @@ from .filesystem import FileSystem;
 from .model import Entry, Location, Mount, ResolvedPath, Volume;
 from .paths import logical_name, logical_parent, normalize_logical, windows_logical_to_native, windows_native_to_logical;
 
-__version__="0.1.0a1";
+__version__="0.1.0a3";
 __all__=["Entry","FSAError","FileSystem","Location","Mount","ResolvedPath","UnmappedPathError","VirtualPathError","Volume","decode_mount_field","detect_platform","discover_mounts","logical_name","logical_parent","normalize_logical","parse_mountinfo","windows_logical_to_native","windows_native_to_logical"];
